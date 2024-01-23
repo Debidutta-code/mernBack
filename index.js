@@ -224,6 +224,10 @@ server.get('/teacherlogindetails', async (req, res) => {
   }
 })
 
+server.get('/', (req, res) => {
+  res.json("hello");
+})
+
 server.listen(8080, () => {
   console.log("server running...");
 });
